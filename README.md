@@ -21,3 +21,14 @@ print("sum of frist", n ,"natural numbers is", nsum(n))
 OUTPUT:
 enter n: 5
 sum of frist 5 natural numbers is 15
+
+def rstring(s):
+    if len(s)==0:
+        return s
+    return rstring(s[1:])+(s[0])
+text=input("enter a word:")
+print(rstring(text))
+OUTPUT:
+enter a word: missmiss
+ssimssim
+
