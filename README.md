@@ -32,3 +32,15 @@ OUTPUT:
 enter a word: missmiss
 ssimssim
 
+#recursions
+def fibonaci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonaci(n-1)+fibonaci(n-2)
+n=int(input("enter the terms:"))
+for i in range(n):
+    print(fibonaci(i),end=' ')
+OUTPUT:
+enter the terms: 10
+0 1 1 2 3 5 8 13 21 34 
