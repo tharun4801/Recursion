@@ -58,3 +58,23 @@ OUTPUT:
 enter a four digit number: 9999
 sum of digits: 36
 
+#even and odd using without moduluse
+def one(n):
+    if n==0:
+        return True
+    else:
+        return two(n-1)
+def two(n):
+    if n==0:
+        return False
+    else:
+        return one(n-1)
+n=int(input("enter the number:"))
+if one(n):
+    print(n,"is even")
+else:
+    print(n,"is odd")
+OUTPUT:
+enter the number: 999
+999 is odd
+    
