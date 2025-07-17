@@ -120,7 +120,7 @@ pakala 1
 
 def player_A(n):
     if n<=0:
-        print("player A reached 0!! player A losses")
+        print("player A reached 0!! player A losses🤦‍♂️")
         return
     print(f"\n player A's turn. Current number{n}")
     move=int(input("player A,subtract 1 or 2:"))
@@ -129,7 +129,7 @@ def player_A(n):
     player_B(n-move)
 def player_B(n):
     if n<=0:
-        print("player B reached 0!! player B losses")
+        print("player B reached 0!! player B losses🤦‍♂️")
         return
     print(f"\n player B's turn. Current number{n}")
     move=int(input("player B,subtract 1 or 2:"))
@@ -150,4 +150,4 @@ player B,subtract 1 or 2: 1
 
  player A's turn. Current number2
 player A,subtract 1 or 2: 2
-player B reached 0!! player B losses
+player B reached 0!! player B losses🤦‍♂️
