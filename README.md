@@ -78,3 +78,21 @@ OUTPUT:
 enter the number: 999
 999 is odd
     
+def even(n):
+    if(n&1)==0:
+        return True
+    else:
+        return odd(n)
+def odd(n):
+    if(n&1)==0:
+        return True
+    else:
+        return even(n)
+n=int(input("enter the number:"))
+if even(n):
+    print(n,"is even")
+else:
+    print(n,"is odd")
+OUTPUT:
+enter the number: 66
+66 is even
