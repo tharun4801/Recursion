@@ -44,3 +44,17 @@ for i in range(n):
 OUTPUT:
 enter the terms: 10
 0 1 1 2 3 5 8 13 21 34 
+
+#sum of digits in idirect recursion
+def dsum(n):
+    if n==0:
+        return 0
+    return n%10+temp(n//10)
+def temp(n):
+    return dsum(n)
+n=int(input("enter a four digit number:"))
+print("sum of digits:",dsum(n))
+OUTPUT:
+enter a four digit number: 9999
+sum of digits: 36
+
