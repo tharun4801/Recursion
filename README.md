@@ -96,3 +96,24 @@ else:
 OUTPUT:
 enter the number: 66
 66 is even
+
+def A(n):
+    if n<=0:
+        return
+    print("Rajesh",n)
+    B(n-1)
+def B(n):
+    if n<=0:
+        return 
+    print("pakala",n)
+    A(n-1)
+n=int(input("enter the number:"))
+A(n)
+OUTPUT:
+enter the number: 6
+Rajesh 6
+pakala 5
+Rajesh 4
+pakala 3
+Rajesh 2
+pakala 1
